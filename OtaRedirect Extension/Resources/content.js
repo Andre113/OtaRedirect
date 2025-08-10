@@ -1,8 +1,8 @@
 function redirectEcosia() {
-    // Redirect ecosia to presearch
+    // Redirect ecosia to kagi
     const newUrl = window.location.href.replace(
         /^(https?:\/\/)(?:www\.)?ecosia\.org\/search\?q=(.+)/,
-        '$1presearch.com/search?q=$2'
+        '$1kagi.com/search?q=$2'
       );
     window.location.replace(newUrl);
 }
