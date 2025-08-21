@@ -12,7 +12,7 @@ function redirectFandom() {
     if (window.location.pathname.startsWith('/wiki')) {
         const newUrl = window.location.href.replace(
             /^(https?:\/\/)([^/]+)\.fandom\.com\/(.*)/,
-            '$wiki.overtheairdre.com/$2/$3'
+            '$1wiki.overtheairdre.com/$2/$3'
         );
         window.location.replace(newUrl);
     }
